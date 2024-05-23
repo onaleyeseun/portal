@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="psb.paymentgateway.utilities.ITestListenerClass"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/oluwaseun.onaleye/Downloads/PaymentGateWayPortal02">
+        <classes>
+            <class name="psb.paymentgateway.testcases.LoginTest">
+                <methods>
+                    <include name="testSignUpLinkIsClickable"/>
+                    <include name="testSignUpLinkRedirectToSignUpPage"/>
+                </methods>
+            </class>
+            <class name="psb.paymentgateway.testcases.SignUpTest">
+                <methods>
+                    <include name="testAllMandatoryFieldsAreEnabled"/>
+                    <include name="testSuccessfulSignUp"/>
+                    <include name="testSubmissionOfEmptyForm"/>
+                    <include name="testSpecialCharacterInPassword"/>
+                    <include name="testForUppercaseValidationInPassword"/>
+                    <include name="testForUppercaseValidationInPassword"/>
+                    <include name="testForValidationOfMatchedConfirmPasssword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
